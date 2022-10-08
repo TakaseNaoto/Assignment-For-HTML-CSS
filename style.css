@@ -1,0 +1,188 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  position: absolute;
+}
+
+.HeaderLogo:hover {
+  opacity: 0.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none
+}
+
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px;
+  max-width: 100%;
+}
+
+.HeaderLogo {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.HeaderNavList {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderNavListItem_Link:hover {
+  opacity: 0.5;
+}
+
+.HeaderNavListItem_Link {
+  display: block;
+}
+
+.HeaderNavListItem {
+  margin-right: 45px;
+}
+
+.HeaderNavListItem_Link>span:last-child {
+  font-size: 10px;
+}
+
+.HeaderNavListItem_Link>span {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.HeaderNavListItem_Button {
+  background-color: orange;
+  color: white;
+  border-radius: 38px;
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.FirstView {
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.FirstViewContainer {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.FirstViewContent {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.FirstViewContentTitle {
+  text-align: center;
+  font-size: 38px
+}
+
+.FirstViewContentImages {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.FirstViewContentImages img:nth-of-type(2) {
+  width: 40%;
+}
+
+.FirstViewContentButtons a:first-of-type {
+  margin-right: 15px;
+  width: 306px;
+}
+
+.FirstViewContentButtons a:hover {
+    opacity: 0.5;
+}
+
+.FirstViewContentButtons {
+  display: flex;
+}
+
+.FirstViewContentButtons a {
+  background-color: orange;
+  border-radius: 38px;
+  height: 64px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.FirstViewContentButtons a:last-of-type {
+  width: 175px;
+  background-color: white;
+  border: solid 1px silver;
+  color:black;
+}
+
+.FirstViewCaption {
+  font-size: 12px;
+  color: gray;
+}
+
+.AboutPotepan {
+  background-color: orange;
+  padding: 44px 0;
+}
+
+.About {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
+}
+
+.AboutVideo {
+  width: 50%;
+}
+
+video {
+  object-fit: contain;
+}
+
+.AboutTitle {
+  margin-left: 32px;
+  color: white;
+}
+
+.AboutTitle h2{
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.AboutButton {
+  color: white;
+}
