@@ -1,3 +1,12 @@
+* {
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -5,7 +14,24 @@
   position: absolute;
 }
 
-.HeaderLogo:hover {
+@media screen and (max-width: 767px){
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}}
+
+@media screen and (max-width: 1080px){
+.header {
+  background-color: #fff;
+  z-index: 10;
+}}
+
+@media screen and (max-width: 1080px){
+.header {
+  position: fixed !important;
+}}
+
+.ToTop:hover {
   opacity: 0.5;
 }
 
@@ -18,11 +44,31 @@ a {
   text-decoration: none
 }
 
+div {
+  display: block
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px){
+.HeaderContainer {
+  max-width: 100%;
+  margin: 0 20px;
+}}
+
 .HeaderContainer {
   display: flex;
   justify-content: space-between;
   margin: 0 36px;
   max-width: 100%;
+  position: relative;
+}
+
+.HeaderContainer>*:last-child {
+  display: inline-flex;
 }
 
 .HeaderLogo {
@@ -31,15 +77,74 @@ a {
   width: auto;
 }
 
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 21px;
+  z-index: 100;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger_Line:first-child {
+  top: 0;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger_Line:last-child {
+  top: 100%;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavHamburger_Line {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}}
+
 .HeaderNavList {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.HeaderNavListItem_Link:hover {
+@media screen and (max-width: 767px){
+.HeaderNavList {
+  top: 52px;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavList {
+  overflow-y: scroll;
+  position: fixed;
+  top: 60px;
+  left: 100%;
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 75px;
+  transition: transform .5s;
+  z-index: 99;
+  background-color: rgba(0,0,0,.8);
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}}
+
+@media screen and (min-width: 768px){
+.HeaderNavListItem:hover {
   opacity: 0.5;
-}
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavListItemLink {
+  padding: 20px 0;
+}}
 
 .HeaderNavListItem_Link {
   display: block;
@@ -48,6 +153,35 @@ a {
 .HeaderNavListItem {
   margin-right: 45px;
 }
+
+@media screen and (max-width: 1080px){
+.HeaderNavListItem {
+  margin-right: 0;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavListItem:last-of-type {
+  margin-top: 20px;
+}}
+
+.HeaderNavListItem:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1080px){
+.HeaderNavListItem_Link>span:first-child {
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: #fff;
+}}
+
+@media screen and (max-width: 1080px){
+.HeaderNavListItem_Link>span:last-child {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #f79214;
+  letter-spacing: 2px;
+}}
 
 .HeaderNavListItem_Link>span:last-child {
   font-size: 10px;
@@ -82,6 +216,30 @@ a {
   padding-bottom: 28px;
 }
 
+@media screen and (max-width: 767px){
+.FirstView {
+  background-image: none;
+  padding-top: 0;
+  padding-bottom: 35px;
+  background-color: white;
+}}
+
+@media screen and (max-width: 767px){
+.FirstViewImage {
+  display: block;
+  width: 100%;
+}}
+
+@media screen and (min-width: 768px){
+.FirstViewImage {
+  display: none;
+}}
+
+@media screen and (max-width: 767px){
+.FirstViewContainer {
+  margin-top: -45vw;
+}}
+
 .FirstViewContainer {
   max-width: 1140px;
   padding-left: 50px;
@@ -111,6 +269,11 @@ a {
   width: 40%;
 }
 
+@media screen and (max-width: 767px){
+.FirstViewContentButtons a:first-of-type {
+  margin-right: 0;
+}}
+
 .FirstViewContentButtons a:first-of-type {
   margin-right: 15px;
   width: 306px;
@@ -135,12 +298,22 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 767px){
+.FirstViewContentButtons a:last-of-type {
+  display: none;
+}}
+
 .FirstViewContentButtons a:last-of-type {
   width: 175px;
   background-color: white;
   border: solid 1px silver;
   color:black;
 }
+
+@media screen and (max-width: 767px){
+.FirstViewContentButtons a {
+  width: 100% !important;
+}}
 
 .FirstViewCaption {
   font-size: 12px;
@@ -152,10 +325,27 @@ a {
   color: gray;
 }
 
+@media screen and (max-width: 767px){
+.AboutPotepan {
+  padding: 30px 0;
+}}
+
 .AboutPotepan {
   background-color: orange;
   padding: 44px 0;
 }
+
+@media screen and (max-width: 1024px){
+.About {
+  flex-direction: column;
+}}
+
+@media screen and (max-width: 767px){
+.About {
+  max-width: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}}
 
 .About {
   display: flex;
@@ -173,9 +363,36 @@ a {
   width: 50%;
 }
 
+@media screen and (max-width: 767px){
+.AboutVideo {
+  width: 100%;
+}}
+
+@media screen and (max-width: 1024px){
+.AboutVideo {
+  margin-bottom: 16px;
+  width: 75%;
+}}
+
 video {
   object-fit: contain;
 }
+
+video {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px){
+.AboutTitle {
+  margin-bottom: 0;
+  width: 100%;
+}}
+
+@media screen and (max-width: 1024px){
+.AboutTitle {
+  margin-left: 0;
+  width: 75%;
+}}
 
 .AboutTitle {
   margin-left: 32px;
